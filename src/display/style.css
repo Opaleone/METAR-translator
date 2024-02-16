@@ -1,0 +1,9 @@
+:root {
+  --bckgrnd: #1b1b1d;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--bckgrnd);
+  color: white;
+}
