@@ -1,13 +1,11 @@
 const { app, BrowserWindow, Menu, ipcMain, ipcRenderer } = require('electron');
-const utils = require('./utils/index');
+const utils = require('./utils');
 
 const createWindow = () => {
   const win = new BrowserWindow({
     width: 800,
     height: 600
   })
-
-  win.setTitle('METAR Translator');
 
   utils.createMenu(win);
 

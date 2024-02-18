@@ -1,5 +1,5 @@
 {
-  "name": "metar-translator",
+  "name": "METAR Translator",
   "version": "0.0.0",
   "description": "Program to translate weather METAR reports into readable weather reports for aviation use",
   "main": "main.js",
