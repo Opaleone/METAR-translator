@@ -1,7 +1,5 @@
-const { app, Menu } = require('electron');
-
 module.exports = {
-  createMenu: (win) => {
+  createMenu: (win, app, Menu, open) => {
     const isMac = process.platform === 'darwin';
 
     console.log(app.name);
@@ -68,7 +66,7 @@ module.exports = {
           {
             label: 'Something broken? Let me know',
             click: async () => {
-              require('child_process').exec('https://github.com/Opaleone/METAR-translator');
+              open('https://github.com/Opaleone/METAR-translator/issues')
             }
           }
         ]

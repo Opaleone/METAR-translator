@@ -1,5 +1,8 @@
-const { app, BrowserWindow, Menu, ipcMain, ipcRenderer } = require('electron');
-const utils = require('./utils');
+import open from 'open';
+import electron from 'electron';
+import utils from './utils/index.cjs';
+
+const { app, BrowserWindow, Menu, ipcMain } = electron;
 
 const createWindow = () => {
   const win = new BrowserWindow({
@@ -7,7 +10,7 @@ const createWindow = () => {
     height: 600
   })
 
-  utils.createMenu(win);
+  utils.createMenu(win, app, Menu, open);
 
   win.loadFile('./client/index.html');
 }

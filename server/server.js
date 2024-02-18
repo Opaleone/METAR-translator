@@ -1,6 +1,6 @@
-const { apiKey, PORT } = require('../config.json');
-const { default: axios } = require('axios');
-const express = require('express');
+import { apiKey, PORT } from '../config.json' assert { type: 'json' }
+import axios from 'axios'
+import express from 'express'
 
 const app = express();
 
