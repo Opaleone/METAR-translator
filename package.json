@@ -1,26 +1,15 @@
 {
   "name": "METAR Translator",
-  "version": "0.0.0",
-  "description": "Program to translate weather METAR reports into readable weather reports for aviation use",
-  "main": "main.js",
-  "type": "module",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "electron ."
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "Opaleone",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Opaleone/METAR-translator"
-  },
+  "author": "",
   "license": "ISC",
   "devDependencies": {
-    "electron": "^28.2.3"
-  },
-  "dependencies": {
-    "axios": "^1.6.7",
-    "express": "^4.18.2",
-    "open": "^10.0.3"
+    "electron-vite": "^2.0.0"
   }
 }
