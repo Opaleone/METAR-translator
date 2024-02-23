@@ -132,3 +132,5 @@ dist
 config.json
 notes.md
 prac.js
+iata-icao.csv
+.DS_Store
