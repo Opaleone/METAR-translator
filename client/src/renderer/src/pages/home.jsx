@@ -13,7 +13,6 @@ export default function Home() {
     const code = e.target[0].value;
     console.log(code);
     const metarInfo = await axios.get(`https://api.checkwx.com/metar/${code}/decoded?x-api-key=${config.apiKey}`);
-
     setMetar(metarInfo);
   }
 
@@ -22,10 +21,6 @@ export default function Home() {
     curMetarRaw = curMetar.raw_text;
     metarRmkSplit = curMetarRaw.split(' RMK ')[1];
   }
-
-  // console.log(curMetar);
-  // console.log(curMetarRaw);
-  // console.log(metarRmkSplit);
 
   return (
     <div>
