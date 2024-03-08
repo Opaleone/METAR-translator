@@ -1,4 +1,4 @@
-export default def = {
+const def = {
   BC: "Patches",
   BL: "Blowing",
   BR: "Mist",
@@ -87,3 +87,5 @@ export default def = {
     WSHFT: "Wind shift"
   }
 }
+
+module.exports = def;

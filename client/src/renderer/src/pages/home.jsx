@@ -1,9 +1,10 @@
 import { useState } from 'react';
 import axios from 'axios';
 import config from '../../../../../config.json' assert { type: 'json' };
+import filterCodeArr from '../../../../../utils/icaoGet.js';
 
 export default function Home() {
-  // const [metar, setMetar] = useState('');
+  const [metar, setMetar] = useState(false);
   // let curMetar;
   // let curMetarRaw;
   // let metarRmkSplit;
@@ -22,22 +23,7 @@ export default function Home() {
   //   metarRmkSplit = curMetarRaw.split(' RMK ')[1];
   // }
 
-  const icaoBool = (e) => {
-    e.preventDefault();
-  }
-
-  const filterCodeArr = [];
-
-  const icaoCodeFile = fs.readFileSync('../assets/icaoCodes.txt', e => {
-    console.log(e.message);
-  }).toString();
-
-  const icaoCodeArr = icaoCodeFile.split('\n');
-
-  for (let i = 1; i < icaoCodeArr.length; i++) {
-    const curIcaoCode = icaoCodeArr[i].split(',')[3];
-    filterCodeArr.push(curIcaoCode);
-  }
+  console.log(filterCodeArr);
 
   return (
     <div>
@@ -46,6 +32,7 @@ export default function Home() {
         <input name="icao" type="text" />
         <button type='submit'>Search</button>
       </form>
+      <p>{metar}</p>
     </div>
   )
 }

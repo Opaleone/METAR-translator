@@ -21,7 +21,8 @@
     "@electron-toolkit/preload": "^3.0.0",
     "@electron-toolkit/utils": "^3.0.0",
     "axios": "^1.6.7",
-    "electron-updater": "^6.1.7"
+    "electron-updater": "^6.1.7",
+    "fs": "^0.0.1-security"
   },
   "devDependencies": {
     "@babel/plugin-syntax-import-assertions": "^7.23.3",
@@ -36,6 +37,7 @@
     "prettier": "^3.2.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "vite": "^5.0.12"
+    "vite": "^5.0.12",
+    "vite-plugin-electron-renderer": "^0.14.5"
   }
 }
